@@ -10,6 +10,7 @@ import { CustomerEditComponent } from './customer/customer-edit/customer-edit.co
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
 import { CustomerDeleteComponent } from './customer/customer-delete/customer-delete.component';
 import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CustomerDetailComponent } from './customer/customer-detail/customer-det
     CustomerEditComponent,
     CustomerListComponent,
     CustomerDeleteComponent,
-    CustomerDetailComponent
+    CustomerDetailComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
