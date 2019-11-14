@@ -1,0 +1,25 @@
+<div class="text-center text-uppercase font-weight-bold">
+  <span style="font-size: 24px">Danh sách khách hàng</span>
+</div>
+<router-outlet></router-outlet>
+<div class="mt-lg-4">
+  <a routerLink="/create-customer">Tạo mới khách hàng</a>
+</div>
+<div class="mt-lg-4">
+  <table class="table table-bordered">
+    <tr>
+      <th>Tên khách hàng</th>
+      <th>Địa chỉ</th>
+      <th>Điện thoại</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <tr *ngFor="let customer of customerList">
+      <td><a [routerLink]="['detail-customer',customer.id]">{{customer.name}}</a></td>
+      <td>{{customer.address}}</td>
+      <td>{{customer.phoneNumber}}</td>
+      <td><a [routerLink]="['edit-customer',customer.id]">Edit</a></td>
+      <td><a [routerLink]="['delete-customer',customer.id]">Delete</a></td>
+    </tr>
+  </table>
+</div>

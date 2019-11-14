@@ -1,0 +1,26 @@
+<div class="text-center">
+  <h2>Bạn có muốn xóa không ?</h2>
+</div>
+<div *ngIf="successMessage" class="alert alert-success">
+  <p>{{successMessage}}</p>
+</div>
+
+<div *ngIf="failMessage" class="alert alert-danger">
+  <p>{{failMessage}}</p>
+</div>
+
+<label class="col">
+  Tên khách hàng:
+  <span>{{customer.name}}</span>
+</label>
+<label class="col">
+  Địa chỉ:
+  <span>{{customer.address}}</span>
+</label>
+<label class="col">
+  Điện thoại:
+  <span>{{customer.phoneNumber}}</span>
+</label>
+<div class="col">
+  <button class="btn btn-info" type="submit" (click)="deleteCustomer()">Delete</button>
+</div>

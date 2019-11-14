@@ -1,0 +1,28 @@
+<div class="text-center">
+  <h2>Tạo mới khách hàng</h2>
+</div>
+<div *ngIf="successMessage" class="alert alert-success">
+  <p>{{successMessage}}</p>
+</div>
+
+<div *ngIf="failMessage" class="alert alert-danger">
+  <p>{{failMessage}}</p>
+</div>
+
+<form #customerForm="ngForm" (ngSubmit)="createCustomer(customerForm)">
+  <label class="col">
+    Tên khách hàng:
+    <input type="text" name="name" ngModel class="form-control">
+  </label>
+  <label class="col">
+    Địa chỉ:
+    <input type="text" name="address" ngModel class="form-control">
+  </label>
+  <label class="col">
+    Điện thoại:
+    <input type="text" name="phoneNumber" ngModel class="form-control">
+  </label>
+  <div class="col">
+    <button class="btn btn-info" type="submit">Tạo mới</button>
+  </div>
+</form>

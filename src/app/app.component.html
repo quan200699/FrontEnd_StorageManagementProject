@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="mt-lg-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="list-customer">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/list-customer">Khách hàng</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="row mt-lg-3">
+    <div class="select">
+      <div class="col-lg-2">
+        <div>
+          <a routerLink="/">Trang chủ</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Khách hàng</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Sản phẩm</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Kho Hàng</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Nhân viên</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Nhà cung cấp</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Phiếu nhập</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Phiếu xuất</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Chi tiết phiếu nhập</a>
+        </div>
+        <div class="mt-lg-4">
+          <a routerLink="/list-customer">Chi tiết phiếu xuất</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
